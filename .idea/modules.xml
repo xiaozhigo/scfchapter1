@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/scfchapter1.iml" filepath="$PROJECT_DIR$/scfchapter1.iml" />
       <module fileurl="file://$PROJECT_DIR$/server-ribbon/server-ribbon.iml" filepath="$PROJECT_DIR$/server-ribbon/server-ribbon.iml" />
       <module fileurl="file://$PROJECT_DIR$/server-zipkin/server-zipkin.iml" filepath="$PROJECT_DIR$/server-zipkin/server-zipkin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/servic-turbine/servic-turbine.iml" filepath="$PROJECT_DIR$/servic-turbine/servic-turbine.iml" />
       <module fileurl="file://$PROJECT_DIR$/service-zipkin2/service-zipkin2.iml" filepath="$PROJECT_DIR$/service-zipkin2/service-zipkin2.iml" />
     </modules>
   </component>

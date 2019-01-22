@@ -16,6 +16,7 @@
         <module name="eureka-zuul" />
         <module name="server-ribbon" />
         <module name="server-zipkin" />
+        <module name="servic-turbine" />
         <module name="service-zipkin2" />
       </profile>
     </annotationProcessing>
@@ -31,6 +32,7 @@
       <module name="scfchapter1" target="1.8" />
       <module name="server-ribbon" target="1.8" />
       <module name="server-zipkin" target="1.8" />
+      <module name="servic-turbine" target="1.8" />
       <module name="service-zipkin2" target="1.8" />
     </bytecodeTargetLevel>
   </component>

@@ -1,0 +1,24 @@
+server:
+  port: 7010
+spring:
+  application:
+    name: servic-turbine
+eureka:
+  client:
+    service-url:
+       defaultZone: http://localhost:8761/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      cors:
+        allowed-origins: "*"
+        allowed-methods: "*"
+turbine:
+  app-config: eureka-client
+  aggregator:
+    cluster-config: default
+  cluster-name-expression: new String("default")
+  combine-host-port: true
+
