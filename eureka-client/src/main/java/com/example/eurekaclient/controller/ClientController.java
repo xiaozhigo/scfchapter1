@@ -1,10 +1,12 @@
 package com.example.eurekaclient.controller;
 
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
 
 /**
  * @author wulei
@@ -13,17 +15,20 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ClientController {
 
+    private static final Logger logger = LoggerFactory.getLogger(ClientController.class);
+
     @Value("${server.port}")
     private String port;
 
     @RequestMapping("/port")
     public String port(){
+        logger.info("进入port接口");
         return "port:"+port+"正在启动中";
     }
 
 
     @RequestMapping("/home")
-    @HystrixCommand(fallbackMethod = "homeError")
+    //@HystrixCommand(fallbackMethod = "homeError")
     public String home(@RequestParam String name){
         return "welcome to home "+name+",port:"+port;
     }

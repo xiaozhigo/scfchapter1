@@ -10,3 +10,15 @@ spring:
 feign:
   hystrix:
     enabled: true
+
+hystrix:
+  command:
+    default:
+      circuitBreaker:
+        forceClosed: true
+        sleepWindowInMilliseconds: 500000
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 1000000
+  shareSecurityContext: true
