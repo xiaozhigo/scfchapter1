@@ -1,0 +1,35 @@
+server:
+  port: 10001
+spring:
+  application:
+    name: apollo-test
+
+app:
+  id: apollo-test
+apollo:
+  meta: http://192.168.176.128:8080
+  bootstrap:
+    enabled: true
+    eagerLoad:
+      enabled: true
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      cors:
+        allowed-origins: "*"
+        allowed-methods: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS   #health endpoint是否必须显示全部细节
+  security:
+    enabled: false
