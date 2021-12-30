@@ -3,7 +3,13 @@ server:
 spring:
   application:
     name: transation-service
-
+  #datasource:
+    #driver-class-name: com.mysql.cj.jdbc.Driver
+    #url: jdbc:mysql://192.168.176.128:3306/test?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&useSSL=false
+    #url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&useSSL=false
+    #username: root
+    #password: 123
+    #password: root
 app:
   id: transation-service
 apollo:
@@ -19,3 +25,4 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
   instance:
     prefer-ip-address: true
+
